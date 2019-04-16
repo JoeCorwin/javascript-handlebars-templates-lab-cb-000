@@ -5,15 +5,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
   init()
 })
 
-function loadIssue() {
-  var issue = {
-    state: "closed",
-    number: 5,
-    created_at: "2016-03-31 16:23:13 UTC",
-    body: "Instructions say GET /team and POST /newteam. Rspec wants GET/newteam and POST/team."
+function createRecipe() {
+  var recipe = {
+    description: 'yummy chicken noodle soup',
+    ingredients: [
+      {quantity: "1 cup", name: 'chicken'},
+      {quantity: "3 nanoliters", name: 'stock'},
+      {quantity: "12", name: 'noodles'}
+    ]
   }
 
-  var template = Handlebars.compile(document.getElementById("issue-template").innerHTML);
-  var result = template(issue);
-  document.getElementsByTagName("main")[0].innerHTML += result;
+  var template = Handlebars.compile(document.getElementById("my-template").innerHTML);
+  var html = template(recipe);
 }
