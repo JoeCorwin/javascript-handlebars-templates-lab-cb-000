@@ -9,9 +9,11 @@ function createRecipe() {
   var recipe = {
     description: 'yummy chicken noodle soup',
     ingredients: [
-      {quantity: "1 cup", name: 'chicken'},
-      {quantity: "3 nanoliters", name: 'stock'},
-      {quantity: "12", name: 'noodles'}
+      {name: 'chicken'},
+      {name: 'stock'},
+      {name: 'noodles'},
+      {name: 'carrots'},
+      {name: 'garlic'},
     ]
   }
 
