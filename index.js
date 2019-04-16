@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 function createRecipe() {
   var recipe = {
-    recipeName: 'Winter Chx Soup'
+    recipeName: 'Winter Chx Soup',
     description: 'yummy chicken noodle soup',
     ingredients: [
       {name: 'chicken'},
