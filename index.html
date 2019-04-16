@@ -20,7 +20,16 @@
         <input type="submit">
       </form>
 
-
+      <script id="my-template" type="text/x-handlebars-template">
+        <div id="recipe">
+          <p>{{description}}</p>
+          <ul>
+            {{#each ingredients}}
+            <li>{{name}}</li>
+            {{/each}}
+          </ul>
+        </div>
+      </script>
 
 
 
